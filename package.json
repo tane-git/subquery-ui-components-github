@@ -20,7 +20,7 @@
     "copy-css": "copyfiles -u 1 src/**/*.module.css dist/",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepare": "husky install && yarn build"
+    "prepare": "yarn build && husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
