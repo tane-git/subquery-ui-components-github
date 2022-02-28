@@ -2,7 +2,7 @@
   "name": "subquery-ui-components",
   "version": "1.0.0",
   "description": "SubQuery's UI Component Library using Antd",
-  "main": "./dist/index.ts",
+  "main": "./dist/index.js",
   "repository": "git@bitbucket.org:onfinalitydev/subquery-ui-components.git",
   "author": "tane-git <tane.alexander.wilson@gmail.com>",
   "license": "Apache-2.0",
