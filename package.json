@@ -1,6 +1,6 @@
 {
   "name": "subquery-ui-components-github",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "SubQuery's UI Component Library using Antd",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
