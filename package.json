@@ -1,0 +1,44 @@
+{
+  "name": "subquery-ui-components",
+  "version": "1.0.0",
+  "description": "SubQuery's UI Component Library using Antd",
+  "main": "./dist/index.ts",
+  "repository": "git@bitbucket.org:onfinalitydev/subquery-ui-components.git",
+  "author": "tane-git <tane.alexander.wilson@gmail.com>",
+  "license": "Apache-2.0",
+  "private": false,
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc && yarn copy-css",
+    "copy-css": "copyfiles -u 1 src/**/*.module.css dist/",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepare": "husky install && yarn build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.10.0",
+    "eslint-plugin-react": "^7.29.2",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "2.5.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
